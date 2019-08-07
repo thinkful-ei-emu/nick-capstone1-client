@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.title-header {
+  margin-top: 20%;
+  margin-bottom: 15%;
+  font-size: 40px;
+
+}

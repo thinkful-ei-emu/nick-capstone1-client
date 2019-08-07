@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.LoginPage {
+  background-color: rgb(181, 184, 196);
+  min-height: 200px;
+  padding: 4%;
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10px;
+
+}
