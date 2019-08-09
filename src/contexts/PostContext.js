@@ -55,11 +55,12 @@ export class PostProvider extends React.Component {
     this.setComments([])
   }
 
-  addComment = comments => {
-    this.setState([
-      ...this.state.comments,
-      comments
-    ])
+
+  addComment = comment => {
+    console.log('add comment ran')
+    this.setState({
+      comments:[...this.state.comments, comment]
+  })
   }
 
   render(){
@@ -72,7 +73,7 @@ export class PostProvider extends React.Component {
   setPost: this.setPost,
   clearPost: this.clearPost,
   setComments: this.setComments,
-  addComments: this.addComments,
+  addComment: this.addComment,
     }
 
     return (

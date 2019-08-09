@@ -26,7 +26,7 @@ const AuthApiServices = {
       (!res.ok) ? res.json().then(e => Promise.reject(e)) : res.json()
     )
     .then(res => {
-      TokenService.saveAuthToken(res.authToken);
+      TokenService.saveAuthToken(res.authToken, res.user_name);
       return res
     })
   }

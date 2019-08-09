@@ -1,13 +1,13 @@
 const Lists = {
   instrumentOptions: [
-    'Guitar (6)',
-    'Guitar (7)',
+    'Guitar(6)',
+    'Guitar(7)',
     'Guiter(8)',
-    'Acoustic Guitar',
-    'Bass (4)',
-    'Bass (5)',
-    'Acoustic Bass',
-    'Double Bass',
+    'Acoustic-Guitar',
+    'Bass(4)',
+    'Bass(5)',
+    'Acoustic-Bass',
+    'Double-Bass',
     'Drums',
     'Vocals',
     'Piano',
@@ -105,6 +105,13 @@ const Lists = {
     'Mid(6-10)',
     'Mid-High(10-14)',
     'High(14+)'
+  ],
+  post_type: [
+    'Band',
+    'Side-Project',
+    'Recording',
+    'One-off (gig)',
+    'Shed'
   ],
 
 }

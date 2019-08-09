@@ -1,5 +1,5 @@
 import React from 'react';
-import AuthApiService from '../services/AuthApiService';
+import TokenService from '../services/TokenService';
 
 
 const HeaderContext = React.createContext({
@@ -13,10 +13,11 @@ export class HeaderProvider extends React.Component {
 
 
   state = {
-    authToken: AuthApiService.getAuthToken()
+    authToken: TokenService.getAuthToken()
   }
 
   setAuthToken = authToken => {
+    console.log('ran setAuthToken')
     this.setState({
       authToken
     })

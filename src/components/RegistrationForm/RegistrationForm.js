@@ -69,7 +69,7 @@ class RegistrationForm extends React.Component {
           </select>
         </div>
         <div>
-          <label htmlFor='commitment'>Hours Per Week (commitment): </label>
+          <label htmlFor='commitment'>Hours Per Week (Commitment): </label>
           <select name='commitment' id='commitment' required>
             {commitment}
           </select>

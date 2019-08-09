@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginForm from '../../components/LoginForm/LoginForm'
 import './LoginPage.css'
+import HeaderContext from '../../contexts/HeaderContext';
 
 
 class LoginPage extends React.Component {
@@ -10,8 +11,11 @@ class LoginPage extends React.Component {
      },
    }
 
-   handleLoginSuccess = () => {
+   static contextType = HeaderContext
+
+   handleLoginSuccess = (token) => {
      const { history } = this.props;
+     this.context.setAuthToken(token)
      history.push('/posts')
    }
 

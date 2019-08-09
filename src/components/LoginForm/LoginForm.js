@@ -6,7 +6,7 @@ import AuthApiService from '../../services/AuthApiService';
 class LoginForm extends React.Component {
 
   static defaultProps = {
-    onLoginSucces: () => {}
+    onLoginSuccess: () => {}
   }
 
   state = {error: null}
@@ -24,7 +24,8 @@ class LoginForm extends React.Component {
     .then(res => {
       user_name.value = '';
       password.value = '';
-      this.props.onLoginSuccess();
+
+      this.props.onLoginSuccess(res.authToken);
     })
     .catch(res => {
       this.setState({error: res.error})

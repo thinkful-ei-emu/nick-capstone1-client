@@ -8,20 +8,32 @@ class Header extends React.Component{
   
 
   static contextType = HeaderContext;
- 
+
+  
   
   handleLogoutClick = () => {
-    console.log('context', this.context)
-    // this.context.setAuthToken(null)
-    TokenService.clearAuthToken();
-   
+    TokenService.clearAuthToken()
+    this.context.setAuthToken(TokenService.getAuthToken())
+
+  }
+
+
+  
+
+
+  renderUserName = () => {
+    if(this.context.authToken){
+      return <h3>{TokenService.getUserName()}</h3>
+    }
+    else {
+      return <h3>Guest</h3>
+    }
   }
 
   renderLogoutLink() {
 
     return (
       <div>
-        <h1 className='title-header'>BandBridge</h1>
         <Link to='/' onClick={this.handleLogoutClick}>Logout</Link>
       </div>
       )
@@ -30,7 +42,6 @@ class Header extends React.Component{
   renderLoginLink(){
   return  (
       <div>
-        <h1 className='title-header'>BandBridge</h1>
         <Link to='/login'>Login</Link>
         {'  '}
         <Link to='signup'>Sign up!</Link>
@@ -40,9 +51,14 @@ class Header extends React.Component{
 
 
   render(){
+    let userText = this.renderUserName();
     return (
       <header>
-        {TokenService.hasAuthToken()
+        <Link to={'/posts'}>
+        <h1 className='title-header'>BandBridge</h1>
+        </Link>
+        {userText}
+        {this.context.authToken
         ? this.renderLogoutLink()
         : this.renderLoginLink()}
       </header>

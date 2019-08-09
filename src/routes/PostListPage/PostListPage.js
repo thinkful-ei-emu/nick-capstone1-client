@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import PostListItem from '../../components/PostListItem/PostListItem';
 import PostListContext from '../../contexts/PostListContext';
 import PostApiService from '../../services/PostApiService';
@@ -27,6 +28,7 @@ class PostListPage extends React.Component {
   render() {
     return (
       <div>
+        <Link to={'/postform'}>Create Post</Link>
       {this.renderPosts()}
       </div>
     )

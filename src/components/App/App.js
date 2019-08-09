@@ -4,7 +4,9 @@ import Header from '../../components/Header/Header';
 import LandingPage from '../../routes/LandingPage/LandingPage';
 import SignupPage from '../../routes/SignupPage/SignupPage'
 import PostListPage from '../../routes/PostListPage/PostListPage'
-import LoginPage from '../../routes/LoginPage/LoginPage'
+import LoginPage from '../../routes/LoginPage/LoginPage';
+import PostFormPage from '../../routes/PostFormPage/PostFormPage';
+import PostPage from '../../routes/PostPage/PostPage';
 import './App.css';
 
 
@@ -23,7 +25,9 @@ class App extends React.Component {
     return (
 
       <div className="App">
-        <Header />
+        
+          <Header />
+        
         <Switch>
           <Route 
           exact path={'/'}
@@ -41,6 +45,14 @@ class App extends React.Component {
           exact path={'/signup'}
           component={SignupPage}
           />
+          <Route
+            exact path={'/postform'}
+            component={PostFormPage}
+          />
+          <Route
+            path={'/posts/:postId'}
+            component={PostPage}
+            />
         </Switch>
       </div>
     );

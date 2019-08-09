@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './PostListItem.css';
 
 
@@ -20,19 +21,23 @@ class PostListItem extends React.Component {
     if(this.state.isCollapsed){
       return (
         <div>
-          <h1>{post.style}</h1>
+          <Link to={`/posts/${post.id}`}>
+            <h1>{post.style}</h1>
+          </Link>
           <p>Location: {post.location}</p>
-          <p>Need: {post.instruments_need}</p>
+          <p>Need: {post.instruments_need.split(' ').join(', ')}</p>
           <p>{this.truncDesc(post.description)}</p>
         </div>
       )
     }
     else return (
       <div>
-      <h1>{post.style}</h1>
-      <h2>Posted by: <em>{post.author.user_name}</em> on {post.author.date_created}</h2>
+      <Link to={`/posts/${post.id}`}>
+        <h1>{post.style}</h1>
+      </Link>
+      <h2>Posted by: <em>{post.author.user_name}</em> on {new Date(post.author.date_created).toLocaleDateString('en-US')}</h2>
       <p>Location: {post.location}</p>
-      <p>Need: {post.instruments_need}</p>
+      <p>Need: {post.instruments_need.split(' ').join(', ')}</p>
       <p>{post.description}</p>
       <ul>
         <li>Style: {post.style}</li>
@@ -57,7 +62,6 @@ class PostListItem extends React.Component {
 
   render(){
     const { post } = this.props;
-    console.log(post)
     let buttonText = this.buttonText();
     let content = this.determineContent(post);
     return (
