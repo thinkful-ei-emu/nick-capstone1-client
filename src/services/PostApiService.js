@@ -49,6 +49,17 @@ const PostApiService = {
       : res.json()
       )
   },
+  getPostsByLocation(location){
+    return fetch(`${config.API_ENDPOINT}/posts?location=${location}`, {
+      header: {
+        'authorization': `bearer ${TokenService.getAuthToken()}`
+      },
+    }) 
+    .then(res => 
+      (!res.ok)
+      ? res.json().then(e => Promise.reject(e))
+      : res.json())
+  },
   postComment(postId, text){
     return fetch(`${config.API_ENDPOINT}/posts/${postId}/comments`, {
       method: 'POST',

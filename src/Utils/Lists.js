@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 const Lists = {
   instrumentOptions: [
     'Guitar(6)',
@@ -113,6 +116,9 @@ const Lists = {
     'One-off (gig)',
     'Shed'
   ],
+  makeOptions(arr){
+    return arr.map((item, key) => <option key={key} value={item}>{item}</option>)
+  },
 
 }
 

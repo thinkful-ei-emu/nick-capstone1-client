@@ -27,14 +27,12 @@ class PostPage extends React.Component {
 
   renderPost(){
     const {post, comments} = this.context
-    console.log(this.context, this.context.comments.length)
 
     let commentContent;
     if(comments.length === 0){
        commentContent =  <p>No comments yet</p>
     }
     else {
-      console.log(comments.length)
       commentContent = comments.map(comment => {
         return <div key={comment.id}>
           <p><span>{comment.user.user_name}: {comment.text}</span></p>
