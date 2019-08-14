@@ -6,6 +6,10 @@ import { PostProvider } from './contexts/PostContext';
 import { PostListProvider } from './contexts/PostListContext';
 import {HeaderProvider} from './contexts/HeaderContext';
 import App from './components/App/App';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {faArrowAltCircleDown, faArrowAltCircleUp} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faArrowAltCircleDown, faArrowAltCircleUp);
 
 
 ReactDOM.render(

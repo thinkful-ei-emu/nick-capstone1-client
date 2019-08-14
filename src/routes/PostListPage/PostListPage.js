@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../../components/Header/Header';
 import PostListItem from '../../components/PostListItem/PostListItem';
 import PostListContext from '../../contexts/PostListContext';
 import PostApiService from '../../services/PostApiService';
-import Lists from '../../Utils/Lists'
+import Lists from '../../Utils/Lists';
+import './PostListPage.css';
 
 class PostListPage extends React.Component {
 
@@ -18,20 +20,37 @@ class PostListPage extends React.Component {
       .catch(this.context.setError)
   }
   
-  handleFilter = ev => {
+  handleFilterLocation = ev => {
     ev.preventDefault()
     this.context.clearPostList()
     const {location_filter} = ev.target
-    console.log(location_filter.value)
     PostApiService.getPostsByLocation(location_filter.value)
       .then(this.context.setPostList)
+      .then(() => location_filter.value = '')
+      .catch(this.context.setError)
+  }
+
+  handleFilterInstrument = ev => {
+    ev.preventDefault()
+    this.context.clearPostList()
+    const {instrument_filter} = ev.target
+    PostApiService.getPostsByInstrument(instrument_filter.value)
+      .then(this.context.setPostList)
+      .then(() => instrument_filter.value = '')
       .catch(this.context.setError)
   }
 
   handleClearFilter = ev => {
     ev.preventDefault();
-    this.context.clearPostList()
     PostApiService.getAllPosts()
+      .then(this.context.setPostList)
+      .catch(this.context.setError)
+  }
+
+  handleFilter = ev => {
+    ev.preventDefault();
+    const {instrument_filter, location_filter } = ev.target;
+    PostApiService.getFilteredPosts(instrument_filter.value, location_filter.value)
       .then(this.context.setPostList)
       .catch(this.context.setError)
   }
@@ -39,8 +58,9 @@ class PostListPage extends React.Component {
 
   renderPosts() {
     const { postList = []} =  this.context;
-    return postList.map(post => 
+    return postList.map((post, index) => 
       <PostListItem 
+      index={index}
       key={post.id}
       post={post}/>
       )
@@ -48,18 +68,31 @@ class PostListPage extends React.Component {
 
   render() {
     let locations = Lists.makeOptions(Lists.locationOptions);
+    let instruments = Lists.makeOptions(Lists.instrumentOptions)
     return (
-      <div>
-        <form onSubmit={this.handleFilter}>
-          <select name='location_filter' id='location_filter'>
+      <>
+      <Header />
+      <div className='post-list-filters'>
+        <form onSubmit={this.handleFilter} className='filter-form'>
+        <select name='location_filter' defaultValue='' id='location_filter' className='filter-select'>
+          <option value='' disabled >Choose location</option>
            {locations}
           </select>
-          <button type='submit'>Filter Location</button>
-          <button type='button' onClick={this.handleClearFilter}>Clear Filter</button>
+          <select name='instrument_filter' defaultValue='' id='instrument_filter' className='filter-select'>
+          <option value='' disabled >Choose instrument</option>
+           {instruments}
+          </select>
+          <button type='submit' className='filter-button'>Filter</button>
         </form>
-        <Link to={'/postform'}>Create Post</Link>
+        <div className='clear-control'>
+        <button type='button' onClick={this.handleClearFilter} className='clear-button'>Clear Filters</button>
+        </div>
+        <Link to={'/postform'}><button className='create-post-button'>Create Post</button></Link>
+      </div>
+      <div className='post-list'>
       {this.renderPosts()}
       </div>
+      </>
     )
   }
 }

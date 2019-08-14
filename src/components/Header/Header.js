@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import TokenService from '../../services/TokenService';
 import HeaderContext from '../../contexts/HeaderContext';
+import './Header.css'
 
 
 class Header extends React.Component{
@@ -14,54 +15,52 @@ class Header extends React.Component{
   handleLogoutClick = () => {
     TokenService.clearAuthToken()
     this.context.setAuthToken(TokenService.getAuthToken())
-
   }
-
-
-  
-
 
   renderUserName = () => {
     if(this.context.authToken){
-      return <h3>{TokenService.getUserName()}</h3>
+      return <h3 className='user-name'>{TokenService.getUserName()}</h3>
     }
     else {
-      return <h3>Guest</h3>
+      return <h3 className='user-name'>Guest</h3>
     }
   }
 
   renderLogoutLink() {
 
     return (
-      <div>
-        <Link to='/' onClick={this.handleLogoutClick}>Logout</Link>
+      <div className='header-login'>
+       {this.renderUserName()}
+        <Link to='/' onClick={this.handleLogoutClick}><button className='login-button'>Logout</button></Link>
       </div>
       )
   }
 
   renderLoginLink(){
+
   return  (
-      <div>
-        <Link to='/login'>Login</Link>
+      <div className='header-login'>
+       {this.renderUserName()}
+        <Link to='/login'><button className='login-button'>Login</button></Link>
         {'  '}
-        <Link to='signup'>Sign up!</Link>
+        <Link to='signup'><button className='login-button'>Sign up</button></Link>
       </div>
     )
   }
 
 
   render(){
-    let userText = this.renderUserName();
     return (
-      <header>
-        <Link to={'/posts'}>
+      <>
+      <Link to={'/posts'}>
         <h1 className='title-header'>BandBridge</h1>
         </Link>
-        {userText}
+      <header className='app-header'>
         {this.context.authToken
         ? this.renderLogoutLink()
         : this.renderLoginLink()}
       </header>
+      </>
     )
   }
 

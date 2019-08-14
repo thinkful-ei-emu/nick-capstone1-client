@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 
-.title-header {
-  margin-top: 20%;
-  margin-bottom: 15%;
-  font-size: 40px;
+body {
+  background-image: url(http://vater.s3.amazonaws.com/artists/Abe%20Cunningham%20Photo%20Credit%20Ed%20Davis.jpg)
+}
 
+select:hover{
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: pointer;
 }

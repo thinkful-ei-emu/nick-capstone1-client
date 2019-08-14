@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders UI as expected 1`] = `
+Array [
+  <a
+    href="/posts"
+    onClick={[Function]}
+  >
+    <h1
+      className="title-header"
+    >
+      BandBridge
+    </h1>
+  </a>,
+  <header
+    className="app-header"
+  >
+    <div
+      className="header-login"
+    >
+      <h3
+        className="user-name"
+      >
+        Guest
+      </h3>
+      <a
+        href="/login"
+        onClick={[Function]}
+      >
+        <button
+          className="login-button"
+        >
+          Login
+        </button>
+      </a>
+        
+      <a
+        href="/signup"
+        onClick={[Function]}
+      >
+        <button
+          className="login-button"
+        >
+          Sign up
+        </button>
+      </a>
+    </div>
+  </header>,
+  <div
+    className="post-list-filters"
+  >
+    <form
+      className="filter-form"
+      onSubmit={[Function]}
+    >
+      <select
+        className="filter-select"
+        defaultValue=""
+        id="location_filter"
+        name="location_filter"
+      >
+        <option
+          disabled={true}
+          value=""
+        >
+          Choose location
+        </option>
+        <option
+          value="Montgomery (AL)"
+        >
+          Montgomery (AL)
+        </option>
+        <option
+          value="Juneau (AK)"
+        >
+          Juneau (AK)
+        </option>
+        <option
+          value="Phoenix (AZ)"
+        >
+          Phoenix (AZ)
+        </option>
+        <option
+          value="Little Rock (AR)"
+        >
+          Little Rock (AR)
+        </option>
+        <option
+          value="Sacramento (CA)"
+        >
+          Sacramento (CA)
+        </option>
+        <option
+          value="Denver (CO)"
+        >
+          Denver (CO)
+        </option>
+        <option
+          value="Hartford (CT)"
+        >
+          Hartford (CT)
+        </option>
+        <option
+          value="Dover (DE)"
+        >
+          Dover (DE)
+        </option>
+        <option
+          value="Tallahassee (FL)"
+        >
+          Tallahassee (FL)
+        </option>
+        <option
+          value="Atlanta (GA)"
+        >
+          Atlanta (GA)
+        </option>
+        <option
+          value="Honolulu (HI)"
+        >
+          Honolulu (HI)
+        </option>
+        <option
+          value="Boise (ID)"
+        >
+          Boise (ID)
+        </option>
+        <option
+          value="Springfield (IL)"
+        >
+          Springfield (IL)
+        </option>
+        <option
+          value="Indianapolis (IN)"
+        >
+          Indianapolis (IN)
+        </option>
+        <option
+          value="Des Moines (IA)"
+        >
+          Des Moines (IA)
+        </option>
+        <option
+          value="Topeka (KS)"
+        >
+          Topeka (KS)
+        </option>
+        <option
+          value="Frankfort (KY)"
+        >
+          Frankfort (KY)
+        </option>
+        <option
+          value="Baton Rouge (LA)"
+        >
+          Baton Rouge (LA)
+        </option>
+        <option
+          value="Augusta (ME)"
+        >
+          Augusta (ME)
+        </option>
+        <option
+          value="Annapolis (MD)"
+        >
+          Annapolis (MD)
+        </option>
+        <option
+          value="Boston (MA)"
+        >
+          Boston (MA)
+        </option>
+        <option
+          value="Lansing (MI)"
+        >
+          Lansing (MI)
+        </option>
+        <option
+          value="Saint Paul (MN)"
+        >
+          Saint Paul (MN)
+        </option>
+        <option
+          value="Jackson (MS)"
+        >
+          Jackson (MS)
+        </option>
+        <option
+          value="Jefferson City (MO)"
+        >
+          Jefferson City (MO)
+        </option>
+        <option
+          value="Helena (MT)"
+        >
+          Helena (MT)
+        </option>
+        <option
+          value="Lincoln (NE)"
+        >
+          Lincoln (NE)
+        </option>
+        <option
+          value="Carson City (NV)"
+        >
+          Carson City (NV)
+        </option>
+        <option
+          value="Concord (NH)"
+        >
+          Concord (NH)
+        </option>
+        <option
+          value="Trenton (NJ)"
+        >
+          Trenton (NJ)
+        </option>
+        <option
+          value="Santa Fe (NM)"
+        >
+          Santa Fe (NM)
+        </option>
+        <option
+          value="Albany (NY)"
+        >
+          Albany (NY)
+        </option>
+        <option
+          value="Raleigh (NC)"
+        >
+          Raleigh (NC)
+        </option>
+        <option
+          value="Bismarck (ND)"
+        >
+          Bismarck (ND)
+        </option>
+        <option
+          value="Columbus (OH)"
+        >
+          Columbus (OH)
+        </option>
+        <option
+          value="Oklahoma City (OK)"
+        >
+          Oklahoma City (OK)
+        </option>
+        <option
+          value="Salem (OR)"
+        >
+          Salem (OR)
+        </option>
+        <option
+          value="Harrisburg (PA)"
+        >
+          Harrisburg (PA)
+        </option>
+        <option
+          value="Providence (RI)"
+        >
+          Providence (RI)
+        </option>
+        <option
+          value="Columbia (SC)"
+        >
+          Columbia (SC)
+        </option>
+        <option
+          value="Pierre (SD)"
+        >
+          Pierre (SD)
+        </option>
+        <option
+          value="Nashville (TN)"
+        >
+          Nashville (TN)
+        </option>
+        <option
+          value="Austin (TX)"
+        >
+          Austin (TX)
+        </option>
+        <option
+          value="Salt Lake City (UT)"
+        >
+          Salt Lake City (UT)
+        </option>
+        <option
+          value="Montpelier (VT)"
+        >
+          Montpelier (VT)
+        </option>
+        <option
+          value="Richmond (VA)"
+        >
+          Richmond (VA)
+        </option>
+        <option
+          value="Olympia (WA)"
+        >
+          Olympia (WA)
+        </option>
+        <option
+          value="Charleston (WV)"
+        >
+          Charleston (WV)
+        </option>
+        <option
+          value="Madison (WI)"
+        >
+          Madison (WI)
+        </option>
+        <option
+          value="Cheyenne (WY)"
+        >
+          Cheyenne (WY)
+        </option>
+      </select>
+      <select
+        className="filter-select"
+        defaultValue=""
+        id="instrument_filter"
+        name="instrument_filter"
+      >
+        <option
+          disabled={true}
+          value=""
+        >
+          Choose instrument
+        </option>
+        <option
+          value="Guitar(6)"
+        >
+          Guitar(6)
+        </option>
+        <option
+          value="Guitar(7)"
+        >
+          Guitar(7)
+        </option>
+        <option
+          value="Guiter(8)"
+        >
+          Guiter(8)
+        </option>
+        <option
+          value="Acoustic-Guitar"
+        >
+          Acoustic-Guitar
+        </option>
+        <option
+          value="Bass(4)"
+        >
+          Bass(4)
+        </option>
+        <option
+          value="Bass(5)"
+        >
+          Bass(5)
+        </option>
+        <option
+          value="Acoustic-Bass"
+        >
+          Acoustic-Bass
+        </option>
+        <option
+          value="Double-Bass"
+        >
+          Double-Bass
+        </option>
+        <option
+          value="Drums"
+        >
+          Drums
+        </option>
+        <option
+          value="Vocals"
+        >
+          Vocals
+        </option>
+        <option
+          value="Piano"
+        >
+          Piano
+        </option>
+        <option
+          value="Keyboard"
+        >
+          Keyboard
+        </option>
+        <option
+          value="Violin"
+        >
+          Violin
+        </option>
+        <option
+          value="Saxophone"
+        >
+          Saxophone
+        </option>
+        <option
+          value="Cello"
+        >
+          Cello
+        </option>
+        <option
+          value="Flute"
+        >
+          Flute
+        </option>
+      </select>
+      <button
+        className="filter-button"
+        type="submit"
+      >
+        Filter
+      </button>
+    </form>
+    <div
+      className="clear-control"
+    >
+      <button
+        className="clear-button"
+        onClick={[Function]}
+        type="button"
+      >
+        Clear Filters
+      </button>
+    </div>
+    <a
+      href="/postform"
+      onClick={[Function]}
+    >
+      <button
+        className="create-post-button"
+      >
+        Create Post
+      </button>
+    </a>
+  </div>,
+  <div
+    className="post-list"
+  />,
+]
+`;

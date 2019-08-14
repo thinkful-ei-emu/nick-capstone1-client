@@ -1,0 +1,46 @@
+.post-info {
+  color: white;
+  background-color: rgb(207, 55, 55);
+  margin: 1% 15%;
+  border-radius: 5px;
+}
+
+.post-type {
+  margin: 0;
+  padding-top: 4%;
+}
+
+.description {
+  margin: 0;
+  padding: 20px;
+}
+
+.comment-container {
+  background-color: rgb(203, 214, 223);
+}
+
+.comment-header { 
+  color: rgb(114, 121, 128);
+  font-size: 24px;
+  margin: 0;
+  padding-top: 4%;
+}
+
+.comment:nth-child(even) {
+  background-color: rgb(114, 121, 128);
+}
+
+.comment:nth-child(odd) {
+  background-color: rgb(207, 55, 55);
+}
+.comment {
+  color: white;
+  text-align: left;
+  margin: 2% 15%;
+  padding: 0 5%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
+

@@ -7,17 +7,31 @@ body {
   line-height: 1.5;
 }
 
+
+
+.lp-header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  background-color: rgb(207, 55, 55);
+  margin: 0;
+  margin-bottom: 5%;
+}
+
 .lp-info {
   min-height: 200px;
-  background-color: rgb(172, 172, 172);
-  padding: 6% 0;
+  color: white;
+  background-color: rgb(155, 163, 172);
+  padding: 8% 0;
   margin: 0 2%;
   border-radius: 10px;
 }
 
 .bb-desc {
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .lp-links-container {
@@ -27,7 +41,7 @@ body {
   margin-top: 5%;
   margin-right: 5%;
   margin-left: 5%;
-  background-color: rgb(192, 194, 201);
+  background-color: rgb(207, 55, 55);  
   border-radius: 100%;
   min-height: 100px;
 }
@@ -36,8 +50,73 @@ body {
 .lp-button {
   color: white;
   margin-left: 5px;
-  width: 80px;
-  background-color: rgb(116, 116, 116);
+  min-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100px;
+  background-color: rgb(155, 163, 172);
+  border: 1px solid rgb(155, 163, 172);
+  border-radius: 2px;
 }
 
 
+@media only screen and (min-width: 800px){
+
+  .lp-info {
+    min-height: 200px;
+    color: white;
+    background-color: rgb(155, 163, 172);
+    padding: 8% 0;
+    margin: 0 4%;
+    border-radius: 10px;
+  }
+  
+  .bb-desc {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+
+  .lp-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: rgb(207, 55, 55);  
+    border-radius: 100%;
+    min-height: 100px;
+  }
+}
+
+
+@media only screen and (min-width: 1000px){
+
+  .lp-header {
+    margin-bottom: 3%;
+  }
+  .lp-info {
+    min-height: 200px;
+    color: white;
+    background-color: rgb(155, 163, 172);
+    padding: 8% 0;
+    margin: 0 12%; 
+    border-radius: 10px;
+  }
+
+
+  .bb-desc {
+    padding-left: 24%;
+    padding-right: 24%;
+  }
+
+  .lp-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 25%;
+    background-color: rgb(207, 55, 55);  
+    border-radius: 100%;
+    min-height: 150px;
+  }
+}

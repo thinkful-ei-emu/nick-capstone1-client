@@ -1,0 +1,110 @@
+.odd-item {
+  background-color:rgb(207, 55, 55);
+  color: white;
+  margin: 2% 2%;
+  padding: 2% 0;
+  border-radius: 5px;
+}
+
+.even-item {
+  background-color: rgb(155, 163, 172);
+  color: white;
+  margin: 2% 2%;
+  padding: 2% 0;
+  border-radius: 5px;
+}
+
+.even-item > a {
+  color: white;
+}
+
+.even-item > .toggle {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.even-item > a:hover {
+  text-decoration: underline;
+}
+
+.odd-item > a:hover {
+  text-decoration: underline;
+}
+.odd-item > a {
+  color: white;
+}
+
+.odd-item > .toggle {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.toggle:focus{
+  outline: none;
+}
+
+.toggle {
+  background: none;
+  color: black;
+  border: none;
+}
+
+/*is this needed? */
+.post-item {
+  margin: 2% 2%; 
+  padding: 2% 0;
+  border-radius: 5px;
+}
+
+.item-header{
+  margin: 0;
+  font-size: 30px;
+}
+
+
+
+.post-item-attr {
+  list-style: none;
+  text-align: left;
+  margin-left: 25%;
+}
+
+@media only screen and (min-width: 700px){
+  .post-item-attr {
+    list-style: none;
+    text-align: left;
+    margin-left: 30%;
+  }
+}
+
+
+@media only screen and (min-width: 1000px){
+  .odd-item {
+    background-color:rgb(207, 55, 55);
+    color: white;
+    margin: 2% 25%;
+    padding: 2% 0;
+    border-radius: 5px;
+  }
+  .even-item {
+    color: white;
+    margin: 2% 25%;
+    padding: 2% 0;
+    border-radius: 5px;
+  }
+  .post-item-attr {
+    list-style: none;
+    text-align: left;
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .post-item-attr {
+    list-style: none;
+    text-align: left;
+    margin-left: 40%;
+  }
+}

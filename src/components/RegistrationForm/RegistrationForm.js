@@ -41,40 +41,40 @@ class RegistrationForm extends React.Component {
     let styles = this.handleInputOptions(Lists.styles.sort());
     let commitment = this.handleInputOptions(Lists.commitment);
     return (
-      <form className='RegistraionForm' onSubmit={this.handleSubmit}>
-        <div>
+      <form className='registraion-form' onSubmit={this.handleSubmit}>
+        <div className='reg-form-row'>
           <label htmlFor='user_name'>Username: </label>
           <input name='user_name' id='user_name' type='text' required />
         </div>
-        <div>
+        <div className='reg-form-row'>
           <label htmlFor='password'>Password: </label>
           <input name='password' id='password' type='password' required />
         </div>
-        <div>
+        <div className='reg-form-row'>
           <label htmlFor='location'>Location: </label>
           <select name='location' id='location' required>
           {locations} 
           </select>
         </div>
-        <div>
+        <div className='reg-form-row'>
           <label htmlFor='instrument'>Instrument: </label>
           <select name='instrument' id='instrument' required>
           {instruments} 
           </select>
         </div>
-        <div>
+        <div className='reg-form-row'>
           <label htmlFor='styles'>Styles (Genres): </label>
-          <select name='styles' id='styles' multiple size='5' required>
+          <select name='styles' className='reg-form-multi' id='styles' multiple size='5' required>
             {styles}
           </select>
         </div>
-        <div>
-          <label htmlFor='commitment'>Hours Per Week (Commitment): </label>
+        <div className='reg-form-row'>
+          <label htmlFor='commitment'>Hours Per Week (Availability): </label>
           <select name='commitment' id='commitment' required>
             {commitment}
           </select>
         </div>
-        <button type='submit'>Register</button>
+        <button type='submit' className='reg-form-button'>Register</button>
       </form>
     )
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import PostContext from '../../contexts/PostContext';
 import PostApiService from '../../services/PostApiService';
-
+import './CommentForm.css';
 
 class CommentForm extends React.Component {
   static contextType = PostContext
@@ -24,18 +24,19 @@ class CommentForm extends React.Component {
   render(){
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div>
+      <form onSubmit={this.handleSubmit} >
+        <div className='comment-form-container'>
           <textarea 
             name='text' 
             id='text' 
             placeholder='Leave your comment' 
             cols='30' 
             rows='3'
+            className='comment-text comment-text-input'
             required>
           </textarea>
-          <button type='submit'>Add Comment</button>
         </div>
+        <button type='submit' className='comment-button'>Add Comment</button>
       </form>
     )
   }

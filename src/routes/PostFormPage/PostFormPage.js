@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
 import PostForm from '../../components/PostForm/PostForm';
 
 
@@ -17,9 +18,12 @@ class PostFormPage extends React.Component {
 
   render(){
     return (
+      <>
+      <Header />
       <div>
         <PostForm onPostSuccess={this.handlePostSuccess} />
       </div>
+      </>
     )
   }
 

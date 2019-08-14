@@ -1,0 +1,1206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders UI as expected 1`] = `
+Array [
+  <a
+    href="/posts"
+    onClick={[Function]}
+  >
+    <h1
+      className="title-header"
+    >
+      BandBridge
+    </h1>
+  </a>,
+  <header
+    className="app-header"
+  >
+    <div
+      className="header-login"
+    >
+      <h3
+        className="user-name"
+      >
+        Guest
+      </h3>
+      <a
+        href="/login"
+        onClick={[Function]}
+      >
+        <button
+          className="login-button"
+        >
+          Login
+        </button>
+      </a>
+        
+      <a
+        href="/signup"
+        onClick={[Function]}
+      >
+        <button
+          className="login-button"
+        >
+          Sign up
+        </button>
+      </a>
+    </div>
+  </header>,
+  <div>
+    <form
+      className="post-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="post-form-container"
+      >
+        <div
+          className="post-form-row"
+        >
+          <label
+            htmlFor="post_type"
+          >
+            <strong>
+              Project type: 
+            </strong>
+          </label>
+          <select
+            className="post-select"
+            defaultValue=""
+            id="post_type"
+            name="post_type"
+            required={true}
+          >
+            <option
+              disabled={true}
+              value=""
+            >
+              Choose type
+            </option>
+            <option
+              value="Band"
+            >
+              Band
+            </option>
+            <option
+              value="Side-Project"
+            >
+              Side-Project
+            </option>
+            <option
+              value="Recording"
+            >
+              Recording
+            </option>
+            <option
+              value="One-off (gig)"
+            >
+              One-off (gig)
+            </option>
+            <option
+              value="Shed"
+            >
+              Shed
+            </option>
+          </select>
+        </div>
+        <div
+          className="post-form-row"
+        >
+          <label
+            htmlFor="location"
+          >
+            <strong>
+              Location: 
+            </strong>
+          </label>
+          <select
+            className="post-select"
+            defaultValue=""
+            id="location"
+            name="location"
+            required={true}
+          >
+            <option
+              disabled={true}
+              value=""
+            >
+              Choose location
+            </option>
+            <option
+              value="Montgomery (AL)"
+            >
+              Montgomery (AL)
+            </option>
+            <option
+              value="Juneau (AK)"
+            >
+              Juneau (AK)
+            </option>
+            <option
+              value="Phoenix (AZ)"
+            >
+              Phoenix (AZ)
+            </option>
+            <option
+              value="Little Rock (AR)"
+            >
+              Little Rock (AR)
+            </option>
+            <option
+              value="Sacramento (CA)"
+            >
+              Sacramento (CA)
+            </option>
+            <option
+              value="Denver (CO)"
+            >
+              Denver (CO)
+            </option>
+            <option
+              value="Hartford (CT)"
+            >
+              Hartford (CT)
+            </option>
+            <option
+              value="Dover (DE)"
+            >
+              Dover (DE)
+            </option>
+            <option
+              value="Tallahassee (FL)"
+            >
+              Tallahassee (FL)
+            </option>
+            <option
+              value="Atlanta (GA)"
+            >
+              Atlanta (GA)
+            </option>
+            <option
+              value="Honolulu (HI)"
+            >
+              Honolulu (HI)
+            </option>
+            <option
+              value="Boise (ID)"
+            >
+              Boise (ID)
+            </option>
+            <option
+              value="Springfield (IL)"
+            >
+              Springfield (IL)
+            </option>
+            <option
+              value="Indianapolis (IN)"
+            >
+              Indianapolis (IN)
+            </option>
+            <option
+              value="Des Moines (IA)"
+            >
+              Des Moines (IA)
+            </option>
+            <option
+              value="Topeka (KS)"
+            >
+              Topeka (KS)
+            </option>
+            <option
+              value="Frankfort (KY)"
+            >
+              Frankfort (KY)
+            </option>
+            <option
+              value="Baton Rouge (LA)"
+            >
+              Baton Rouge (LA)
+            </option>
+            <option
+              value="Augusta (ME)"
+            >
+              Augusta (ME)
+            </option>
+            <option
+              value="Annapolis (MD)"
+            >
+              Annapolis (MD)
+            </option>
+            <option
+              value="Boston (MA)"
+            >
+              Boston (MA)
+            </option>
+            <option
+              value="Lansing (MI)"
+            >
+              Lansing (MI)
+            </option>
+            <option
+              value="Saint Paul (MN)"
+            >
+              Saint Paul (MN)
+            </option>
+            <option
+              value="Jackson (MS)"
+            >
+              Jackson (MS)
+            </option>
+            <option
+              value="Jefferson City (MO)"
+            >
+              Jefferson City (MO)
+            </option>
+            <option
+              value="Helena (MT)"
+            >
+              Helena (MT)
+            </option>
+            <option
+              value="Lincoln (NE)"
+            >
+              Lincoln (NE)
+            </option>
+            <option
+              value="Carson City (NV)"
+            >
+              Carson City (NV)
+            </option>
+            <option
+              value="Concord (NH)"
+            >
+              Concord (NH)
+            </option>
+            <option
+              value="Trenton (NJ)"
+            >
+              Trenton (NJ)
+            </option>
+            <option
+              value="Santa Fe (NM)"
+            >
+              Santa Fe (NM)
+            </option>
+            <option
+              value="Albany (NY)"
+            >
+              Albany (NY)
+            </option>
+            <option
+              value="Raleigh (NC)"
+            >
+              Raleigh (NC)
+            </option>
+            <option
+              value="Bismarck (ND)"
+            >
+              Bismarck (ND)
+            </option>
+            <option
+              value="Columbus (OH)"
+            >
+              Columbus (OH)
+            </option>
+            <option
+              value="Oklahoma City (OK)"
+            >
+              Oklahoma City (OK)
+            </option>
+            <option
+              value="Salem (OR)"
+            >
+              Salem (OR)
+            </option>
+            <option
+              value="Harrisburg (PA)"
+            >
+              Harrisburg (PA)
+            </option>
+            <option
+              value="Providence (RI)"
+            >
+              Providence (RI)
+            </option>
+            <option
+              value="Columbia (SC)"
+            >
+              Columbia (SC)
+            </option>
+            <option
+              value="Pierre (SD)"
+            >
+              Pierre (SD)
+            </option>
+            <option
+              value="Nashville (TN)"
+            >
+              Nashville (TN)
+            </option>
+            <option
+              value="Austin (TX)"
+            >
+              Austin (TX)
+            </option>
+            <option
+              value="Salt Lake City (UT)"
+            >
+              Salt Lake City (UT)
+            </option>
+            <option
+              value="Montpelier (VT)"
+            >
+              Montpelier (VT)
+            </option>
+            <option
+              value="Richmond (VA)"
+            >
+              Richmond (VA)
+            </option>
+            <option
+              value="Olympia (WA)"
+            >
+              Olympia (WA)
+            </option>
+            <option
+              value="Charleston (WV)"
+            >
+              Charleston (WV)
+            </option>
+            <option
+              value="Madison (WI)"
+            >
+              Madison (WI)
+            </option>
+            <option
+              value="Cheyenne (WY)"
+            >
+              Cheyenne (WY)
+            </option>
+          </select>
+        </div>
+        <div
+          className="post-form-row"
+        >
+          <label
+            htmlFor="style"
+          >
+            <strong>
+              Style/Genre: 
+            </strong>
+          </label>
+          <select
+            className="post-select"
+            defaultValue=""
+            id="style"
+            name="style"
+            required={true}
+          >
+            <option
+              disabled={true}
+              value=""
+            >
+              Choose Style
+            </option>
+            <option
+              value="Blues"
+            >
+              Blues
+            </option>
+            <option
+              value="Classic-Rock"
+            >
+              Classic-Rock
+            </option>
+            <option
+              value="Country"
+            >
+              Country
+            </option>
+            <option
+              value="Dance"
+            >
+              Dance
+            </option>
+            <option
+              value="Disco"
+            >
+              Disco
+            </option>
+            <option
+              value="Funk"
+            >
+              Funk
+            </option>
+            <option
+              value="Grunge"
+            >
+              Grunge
+            </option>
+            <option
+              value="Hip-Hop"
+            >
+              Hip-Hop
+            </option>
+            <option
+              value="Jazz"
+            >
+              Jazz
+            </option>
+            <option
+              value="Metal"
+            >
+              Metal
+            </option>
+            <option
+              value="New-Age"
+            >
+              New-Age
+            </option>
+            <option
+              value="Oldies"
+            >
+              Oldies
+            </option>
+            <option
+              value="Other"
+            >
+              Other
+            </option>
+            <option
+              value="Pop"
+            >
+              Pop
+            </option>
+            <option
+              value="R&B"
+            >
+              R&B
+            </option>
+            <option
+              value="Rap"
+            >
+              Rap
+            </option>
+            <option
+              value="Reggae"
+            >
+              Reggae
+            </option>
+            <option
+              value="Rock"
+            >
+              Rock
+            </option>
+            <option
+              value="Techno"
+            >
+              Techno
+            </option>
+            <option
+              value="Industrial"
+            >
+              Industrial
+            </option>
+            <option
+              value="Alternative"
+            >
+              Alternative
+            </option>
+            <option
+              value="Ska"
+            >
+              Ska
+            </option>
+            <option
+              value="Death-Metal"
+            >
+              Death-Metal
+            </option>
+            <option
+              value="Soundtrack"
+            >
+              Soundtrack
+            </option>
+            <option
+              value="Euro-Techno"
+            >
+              Euro-Techno
+            </option>
+            <option
+              value="Ambient"
+            >
+              Ambient
+            </option>
+            <option
+              value="Trip-Hop"
+            >
+              Trip-Hop
+            </option>
+            <option
+              value="Vocal"
+            >
+              Vocal
+            </option>
+            <option
+              value="Fusion"
+            >
+              Fusion
+            </option>
+            <option
+              value="Trance"
+            >
+              Trance
+            </option>
+            <option
+              value="Classical"
+            >
+              Classical
+            </option>
+            <option
+              value="Instrumental"
+            >
+              Instrumental
+            </option>
+            <option
+              value="Acid"
+            >
+              Acid
+            </option>
+            <option
+              value="House"
+            >
+              House
+            </option>
+            <option
+              value="Gospel"
+            >
+              Gospel
+            </option>
+            <option
+              value="Noise"
+            >
+              Noise
+            </option>
+            <option
+              value="Alt-Rock"
+            >
+              Alt-Rock
+            </option>
+            <option
+              value="Bass"
+            >
+              Bass
+            </option>
+            <option
+              value="Soul"
+            >
+              Soul
+            </option>
+            <option
+              value="Punk"
+            >
+              Punk
+            </option>
+            <option
+              value="Space"
+            >
+              Space
+            </option>
+            <option
+              value="Meditative"
+            >
+              Meditative
+            </option>
+            <option
+              value="Instrumental-Pop"
+            >
+              Instrumental-Pop
+            </option>
+            <option
+              value="Instrumental Rock"
+            >
+              Instrumental Rock
+            </option>
+            <option
+              value="Gothic"
+            >
+              Gothic
+            </option>
+            <option
+              value="Darkwave"
+            >
+              Darkwave
+            </option>
+            <option
+              value="Techno-Industrial"
+            >
+              Techno-Industrial
+            </option>
+            <option
+              value="Electronic"
+            >
+              Electronic
+            </option>
+            <option
+              value="Pop-Folk"
+            >
+              Pop-Folk
+            </option>
+            <option
+              value="Eurodance"
+            >
+              Eurodance
+            </option>
+            <option
+              value="Dream"
+            >
+              Dream
+            </option>
+            <option
+              value="Southern-Rock"
+            >
+              Southern-Rock
+            </option>
+            <option
+              value="Comedy"
+            >
+              Comedy
+            </option>
+            <option
+              value="Cult"
+            >
+              Cult
+            </option>
+            <option
+              value="Pop/Funk"
+            >
+              Pop/Funk
+            </option>
+            <option
+              value="Jungle"
+            >
+              Jungle
+            </option>
+            <option
+              value="Cabaret"
+            >
+              Cabaret
+            </option>
+            <option
+              value="New-Wave"
+            >
+              New-Wave
+            </option>
+            <option
+              value="Psychadelic"
+            >
+              Psychadelic
+            </option>
+            <option
+              value="Rave"
+            >
+              Rave
+            </option>
+            <option
+              value="Showtunes"
+            >
+              Showtunes
+            </option>
+            <option
+              value="Lo-Fi"
+            >
+              Lo-Fi
+            </option>
+            <option
+              value="Tribal"
+            >
+              Tribal
+            </option>
+            <option
+              value="Acid-Punk"
+            >
+              Acid-Punk
+            </option>
+            <option
+              value="Acid Jazz"
+            >
+              Acid Jazz
+            </option>
+            <option
+              value="Polka"
+            >
+              Polka
+            </option>
+            <option
+              value="Retro"
+            >
+              Retro
+            </option>
+            <option
+              value="Musical"
+            >
+              Musical
+            </option>
+            <option
+              value="Rock"
+            >
+              Rock
+            </option>
+            <option
+              value="Hard-Rock"
+            >
+              Hard-Rock
+            </option>
+            <option
+              value="Folk"
+            >
+              Folk
+            </option>
+            <option
+              value="Folk-Rock"
+            >
+              Folk-Rock
+            </option>
+            <option
+              value="National Folk"
+            >
+              National Folk
+            </option>
+            <option
+              value="Swing"
+            >
+              Swing
+            </option>
+            <option
+              value="Fast-Fusion"
+            >
+              Fast-Fusion
+            </option>
+            <option
+              value="Bebob"
+            >
+              Bebob
+            </option>
+            <option
+              value="Latin"
+            >
+              Latin
+            </option>
+            <option
+              value="Revival"
+            >
+              Revival
+            </option>
+            <option
+              value="Celtic"
+            >
+              Celtic
+            </option>
+            <option
+              value="Bluegrass"
+            >
+              Bluegrass
+            </option>
+            <option
+              value="Avantgarde"
+            >
+              Avantgarde
+            </option>
+            <option
+              value="Gothic-Rock"
+            >
+              Gothic-Rock
+            </option>
+            <option
+              value="Progressive-Rock"
+            >
+              Progressive-Rock
+            </option>
+            <option
+              value="Psychedelic Rock"
+            >
+              Psychedelic Rock
+            </option>
+            <option
+              value="Symphonic Rock"
+            >
+              Symphonic Rock
+            </option>
+            <option
+              value="Slow-Rock"
+            >
+              Slow-Rock
+            </option>
+            <option
+              value="Big-Band"
+            >
+              Big-Band
+            </option>
+            <option
+              value="Chorus"
+            >
+              Chorus
+            </option>
+            <option
+              value="Easy-Listening"
+            >
+              Easy-Listening
+            </option>
+            <option
+              value="Acoustic"
+            >
+              Acoustic
+            </option>
+            <option
+              value="Chanson"
+            >
+              Chanson
+            </option>
+            <option
+              value="Opera"
+            >
+              Opera
+            </option>
+            <option
+              value="Chamber-Music"
+            >
+              Chamber-Music
+            </option>
+            <option
+              value="Sonata"
+            >
+              Sonata
+            </option>
+            <option
+              value="Symphony"
+            >
+              Symphony
+            </option>
+            <option
+              value="Satire"
+            >
+              Satire
+            </option>
+            <option
+              value="Slow-Jam"
+            >
+              Slow-Jam
+            </option>
+            <option
+              value="Club"
+            >
+              Club
+            </option>
+            <option
+              value="Tango"
+            >
+              Tango
+            </option>
+            <option
+              value="Samba"
+            >
+              Samba
+            </option>
+            <option
+              value="Folklore"
+            >
+              Folklore
+            </option>
+            <option
+              value="Ballad"
+            >
+              Ballad
+            </option>
+            <option
+              value="Power Ballad"
+            >
+              Power Ballad
+            </option>
+            <option
+              value="Rhythmic Soul"
+            >
+              Rhythmic Soul
+            </option>
+            <option
+              value="Freestyle"
+            >
+              Freestyle
+            </option>
+            <option
+              value="Duet"
+            >
+              Duet
+            </option>
+            <option
+              value="Punk-Rock"
+            >
+              Punk-Rock
+            </option>
+            <option
+              value="Acapella"
+            >
+              Acapella
+            </option>
+            <option
+              value="Euro-House"
+            >
+              Euro-House
+            </option>
+            <option
+              value="Dance-Hall"
+            >
+              Dance-Hall
+            </option>
+            <option
+              value="Pop-Punk"
+            >
+              Pop-Punk
+            </option>
+            <option
+              value="Alt-Metal"
+            >
+              Alt-Metal
+            </option>
+            <option
+              value="Post-Hardcore"
+            >
+              Post-Hardcore
+            </option>
+            <option
+              value="Hardcore"
+            >
+              Hardcore
+            </option>
+            <option
+              value="Math-Rock"
+            >
+              Math-Rock
+            </option>
+          </select>
+        </div>
+        <div
+          className="post-form-row"
+        >
+          <label
+            htmlFor="instruments_need"
+          >
+            <strong>
+              Instruments Needed: 
+            </strong>
+          </label>
+          <select
+            className="post-select instrument-select"
+            id="instruments_need"
+            multiple={true}
+            name="instruments_need"
+            required={true}
+            size="8"
+          >
+            <option
+              value="Guitar(6)"
+            >
+              Guitar(6)
+            </option>
+            <option
+              value="Guitar(7)"
+            >
+              Guitar(7)
+            </option>
+            <option
+              value="Guiter(8)"
+            >
+              Guiter(8)
+            </option>
+            <option
+              value="Acoustic-Guitar"
+            >
+              Acoustic-Guitar
+            </option>
+            <option
+              value="Bass(4)"
+            >
+              Bass(4)
+            </option>
+            <option
+              value="Bass(5)"
+            >
+              Bass(5)
+            </option>
+            <option
+              value="Acoustic-Bass"
+            >
+              Acoustic-Bass
+            </option>
+            <option
+              value="Double-Bass"
+            >
+              Double-Bass
+            </option>
+            <option
+              value="Drums"
+            >
+              Drums
+            </option>
+            <option
+              value="Vocals"
+            >
+              Vocals
+            </option>
+            <option
+              value="Piano"
+            >
+              Piano
+            </option>
+            <option
+              value="Keyboard"
+            >
+              Keyboard
+            </option>
+            <option
+              value="Violin"
+            >
+              Violin
+            </option>
+            <option
+              value="Saxophone"
+            >
+              Saxophone
+            </option>
+            <option
+              value="Cello"
+            >
+              Cello
+            </option>
+            <option
+              value="Flute"
+            >
+              Flute
+            </option>
+          </select>
+        </div>
+        <div
+          className="post-form-row"
+        >
+          <label
+            htmlFor="commitment"
+          >
+            <strong>
+              Available Hours (weekly): 
+            </strong>
+          </label>
+          <select
+            className="post-select"
+            id="commitment"
+            name="commitment"
+            required={true}
+          >
+            <option
+              value="Low(1-3)"
+            >
+              Low(1-3)
+            </option>
+            <option
+              value="Mid-low(3-6)"
+            >
+              Mid-low(3-6)
+            </option>
+            <option
+              value="Mid(6-10)"
+            >
+              Mid(6-10)
+            </option>
+            <option
+              value="Mid-High(10-14)"
+            >
+              Mid-High(10-14)
+            </option>
+            <option
+              value="High(14+)"
+            >
+              High(14+)
+            </option>
+          </select>
+        </div>
+        <div
+          className="post-form-row"
+        >
+          <label
+            htmlFor="skill_lvl"
+          >
+            <strong>
+              Desired Skill: 
+            </strong>
+          </label>
+          <select
+            className="post-select"
+            defaultValue=""
+            id="skill_lvl"
+            name="skill_lvl"
+            required={true}
+          >
+            <option
+              disabled={true}
+              value=""
+            >
+              Choose skill
+            </option>
+            <option
+              value="Beginner"
+            >
+              Beginner
+            </option>
+            <option
+              value="Hobbyist"
+            >
+              Hobbyist
+            </option>
+            <option
+              value="Intermediate"
+            >
+              Intermediate
+            </option>
+            <option
+              value="Advanced"
+            >
+              Advanced
+            </option>
+            <option
+              value="Professional"
+            >
+              Professional
+            </option>
+          </select>
+        </div>
+        <div
+          className="post-form-row"
+        >
+          <label
+            htmlFor="description"
+          >
+            <strong>
+              Description: 
+            </strong>
+          </label>
+          <textarea
+            className="description-text"
+            cols="40"
+            id="description"
+            maxLength="400"
+            name="description"
+            placeholder="Describe your project idea (400 characters or less)"
+            required={true}
+            rows="4"
+          />
+        </div>
+        <button
+          className="post-form-button"
+          type="submit"
+        >
+          Start your project!
+        </button>
+      </div>
+    </form>
+  </div>,
+]
+`;

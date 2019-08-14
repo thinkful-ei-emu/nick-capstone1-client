@@ -1,7 +1,9 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
 import PostContext from '../../contexts/PostContext';
 import PostApiService from '../../services/PostApiService';
 import CommentForm from '../../components/CommentForm/CommentForm';
+import './PostPage.css';
 
 class PostPage extends React.Component {
   static defaultProps = {
@@ -34,36 +36,39 @@ class PostPage extends React.Component {
     }
     else {
       commentContent = comments.map(comment => {
-        return <div key={comment.id}>
-          <p><span>{comment.user.user_name}: {comment.text}</span></p>
+        return <div key={comment.id} className='comment'>
+          <p className='comment-text'>{comment.user.user_name}: {comment.text}</p>
         </div>
       })
     }
 
 
     return (
-      <div>
-        <h1>{post.post_type}</h1>
+      <>
+      <div className='post-info'>
+        <h2 className='post-type'>{post.post_type}</h2>
         <p><span>created by: <em>{post.author.user_name}</em> on {new Date(post.author.date_created).toLocaleDateString('en-US')}</span></p>
-        <ul>
-          <li>Location: {post.location}</li>
-          <li>Style: {post.style}</li>
-          <li>Intruments needed: {post.instruments_need.split(' ').join(', ')}</li>
-          <li>Commitment: {post.commitment}</li>
-          <li>Desired Skill: {post.skill_lvl}</li>
+        <ul className='post-item-attr'>
+          <li><strong>Location: </strong> {post.location}</li>
+          <li><strong>Style: </strong>{post.style}</li>
+          <li><strong>Intruments needed: </strong>{post.instruments_need.split(' ').join(', ')}</li>
+          <li><strong>Availability: </strong>{post.commitment}</li>
+          <li><strong>Desired Skill: </strong>{post.skill_lvl}</li>
         </ul>
-        <p>Project Description: {post.description}</p>
-        <h3>Comments</h3>
+        <p className='description'><strong>Project Description: </strong>{post.description}</p>
+      </div>
+      <div className='comment-container'>
+        <h3 className='comment-header'>Comments</h3>
         {commentContent}
         <CommentForm />
       </div>
+      </>
     )
 
   }
 
 
   render(){
-    if(this.context.comments)console.log(this.context.comments.length)
     const { error, post } = this.context
     let content;
     if(error){
@@ -74,9 +79,12 @@ class PostPage extends React.Component {
     content = this.renderPost()
     }
     return (
+      <>
+      <Header />
       <div>
         {content}
       </div>
+      </>
     )
   }
 }

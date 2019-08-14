@@ -1,6 +1,7 @@
 import React from 'react';
 import Lists from '../../Utils/Lists';
 import PostApiService from '../../services/PostApiService';
+import './PostForm.css';
 
 
 
@@ -10,23 +11,9 @@ class PostForm extends React.Component {
   }
 
   state = {
-    error: null,
+    error: null, 
   }
 
-
-  // handleChangeInstrument = (instrument) => {
-  //   console.log(instrument)
-  //   this.setState(prevState => {
-  //     const newState = prevState;
-  //     if(prevState.instruments[instrument]){
-  //       newState.instruments[instrument] = false;
-  //     }
-  //     else {
-  //       newState.instruments[instrument] = true;
-  //     }
-  //     return newState;
-  //   }, () => console.log(this.state))
-  // }
 
   handleSubmitPost = ev => {
     ev.preventDefault()
@@ -68,56 +55,63 @@ class PostForm extends React.Component {
     const skill_lvl = this.handleInputOptions(Lists.skillLvls);
 
     return (
-      <form onSubmit={this.handleSubmitPost}>
-        <div>
-          <label htmlFor='post_type'>Project type: </label>
-          <select name='post_type' id='post_type'>
+      <form onSubmit={this.handleSubmitPost} className='post-form'>
+        <div className='post-form-container'>
+        <div className='post-form-row'>
+          <label htmlFor='post_type'><strong>Project type: </strong></label>
+          <select name='post_type' id='post_type' defaultValue='' required className='post-select'>
+          <option value='' disabled >Choose type</option>
             {post_type}
           </select>
         </div>
-        <div>
-          <label htmlFor='location'>Location: </label>
-          <select name='location' id='location'>
+        <div className='post-form-row'>
+          <label htmlFor='location'><strong>Location: </strong></label>
+          <select name='location' id='location' defaultValue='' required className='post-select'>
+          <option value='' disabled >Choose location</option>
             {location}
           </select>
         </div>
-        <div>
-          <label htmlFor='style'>Style or Genre:</label>
-          <select name='style' id='style'>
+        <div className='post-form-row'>
+          <label htmlFor='style'><strong>Style/Genre: </strong></label>
+          <select name='style' id='style' defaultValue='' required className='post-select'>
+          <option value='' disabled >Choose Style</option>
             {style}
           </select>
         </div>
-        <div>
-          <label htmlFor='instruments_need'>Instruments Needed:</label>
-          <select name='instruments_need' id='instruments_need' multiple size='8' required>
+        <div className='post-form-row'>
+          <label htmlFor='instruments_need'><strong>Instruments Needed: </strong></label>
+          <select name='instruments_need' id='instruments_need' multiple size='8' className='post-select instrument-select' required>
                 {instruments}
           </select>
         </div>
-        <div>
-          <label htmlFor='commitment'>Hours per week: </label>
-          <select name='commitment' id='commitment'>
+        <div className='post-form-row'>
+          <label htmlFor='commitment'><strong>Available Hours (weekly): </strong></label>
+          <select name='commitment' id='commitment' required className='post-select'>
             {commitment}
           </select>
         </div>
-        <div>
-          <label htmlFor='skill_lvl'>Desired Skill: </label>
-          <select name='skill_lvl' id='skill_lvl'>
+        <div className='post-form-row'>
+          <label htmlFor='skill_lvl'><strong>Desired Skill: </strong></label>
+          <select name='skill_lvl' id='skill_lvl' defaultValue='' required className='post-select'>
+          <option value='' disabled >Choose skill</option>                
             {skill_lvl}
           </select>
         </div>
-        <div>
-          <label htmlFor='description'>Description</label>
+        <div className='post-form-row'>
+          <label htmlFor='description'><strong>Description: </strong></label>
           <textarea 
           name='description' 
           id='description' 
-          cols='20' 
-          rows='3'
+          cols='40' 
+          rows='4'
           placeholder='Describe your project idea (400 characters or less)'
           maxLength='400'
+          className='description-text'
           required >
           </textarea>
         </div>
-        <button type='submit'>Start your project!</button>
+        <button type='submit' className='post-form-button'>Start your project!</button>
+        </div>
       </form>
     )
   }

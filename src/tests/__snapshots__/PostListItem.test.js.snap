@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders UI as expected 1`] = `
+<div
+  className="even-item"
+>
+  <a
+    href="/posts/1"
+    onClick={[Function]}
+  >
+    <h2
+      className="item-header"
+    >
+      Rock
+    </h2>
+  </a>
+  <p>
+    Location: 
+    Atlanta (GA)
+  </p>
+  <p>
+    Need: 
+    Drums, Piano
+  </p>
+  <p>
+    hello...
+  </p>
+  <button
+    className="toggle"
+    onClick={[Function]}
+  />
+</div>
+`;

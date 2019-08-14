@@ -1,0 +1,36 @@
+.comment-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-text {
+  flex: .6;
+  border-radius: 2px;
+}
+
+.comment-text-input {
+  min-height: 100px;
+}
+
+.login-button {
+  color: white;
+  font-size: 18px;
+  margin-left: 30px;
+  min-height: 30px;
+  width: 80px;
+  background-color: rgb(207, 55, 55);
+  border: 1px solid rgb(207, 55, 55);
+  border-radius: 10px;
+}
+
+.comment-button {
+  color: white;
+  font-size: 18px;
+  min-height: 30px;
+  width: auto;
+  background-color: rgb(207, 55, 55);
+  border: 1px solid rgb(207, 55, 55);
+  border-radius: 10px;
+  margin: 4% 0;
+}

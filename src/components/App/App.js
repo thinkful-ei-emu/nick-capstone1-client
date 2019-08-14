@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from '../../components/Header/Header';
+import PrivateRoute from '../../Utils/PrivateRoute';
+import PublicOnlyRoute from '../../Utils/PublicOnlyRoute';
 import LandingPage from '../../routes/LandingPage/LandingPage';
 import SignupPage from '../../routes/SignupPage/SignupPage'
 import PostListPage from '../../routes/PostListPage/PostListPage'
@@ -26,10 +27,10 @@ class App extends React.Component {
 
       <div className="App">
         
-          <Header />
+          
         
         <Switch>
-          <Route 
+          <PublicOnlyRoute 
           exact path={'/'}
           component={LandingPage}
           />
@@ -37,19 +38,19 @@ class App extends React.Component {
           exact path={'/posts'}
           component={PostListPage}
           />
-          <Route
+          <PublicOnlyRoute
           exact path={'/login'}
           component={LoginPage}
           />
-          <Route
+          <PublicOnlyRoute
           exact path={'/signup'}
           component={SignupPage}
           />
-          <Route
+          <PrivateRoute
             exact path={'/postform'}
             component={PostFormPage}
           />
-          <Route
+          <PrivateRoute
             path={'/posts/:postId'}
             component={PostPage}
             />
