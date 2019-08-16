@@ -1,7 +1,7 @@
 .odd-item {
   background-color:rgb(107, 146, 190);
   color: white;
-  margin: 2% 2%;
+  margin: 2% 10%;
   padding: 2% 0;
   border-radius: 5px;
 }
@@ -9,7 +9,7 @@
 .even-item {
   background-color: rgb(238, 131, 98);
   color: white;
-  margin: 2% 2%;
+  margin: 2% 10%;
   padding: 2% 0;
   border-radius: 5px;
 }

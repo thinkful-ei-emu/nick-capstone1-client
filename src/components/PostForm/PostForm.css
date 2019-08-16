@@ -29,13 +29,16 @@
 
 .instrument-select {
   background-color: rgb(155, 163, 172);
+  border-radius: 5px;
   min-width: 150px;
 }
 
 .description-text {
   font-size: 16px;
+  border-radius: 5px;
   color: white;
   background-color: rgb(155, 163, 172);
+  border: rgb(155, 163, 172);
 }
 
 .description-text::placeholder{
