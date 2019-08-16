@@ -3,13 +3,23 @@
 }
 
 body {
-  background-image: url(http://vater.s3.amazonaws.com/artists/Abe%20Cunningham%20Photo%20Credit%20Ed%20Davis.jpg)
+  background-image: url(https://vater.s3.amazonaws.com/artists/Abe%20Cunningham%20Photo%20Credit%20Ed%20Davis.jpg)
 }
 
-select:hover{
+select:hover {
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid rgb(102, 107, 112);
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid rgb(136, 33, 33);
 }

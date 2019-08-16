@@ -17,7 +17,6 @@ export class HeaderProvider extends React.Component {
   }
 
   setAuthToken = authToken => {
-    console.log('ran setAuthToken')
     this.setState({
       authToken
     })

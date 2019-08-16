@@ -8,6 +8,23 @@
   padding: 3% 1%;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(102, 107, 112);
+  color: rgb(155, 163, 172);
+  font-weight: bold;
+  min-height: 300px;
+  text-align: center;
+  margin: 5% 20%;
+  border-radius: 5px;
+}
+
+.error > p {
+  font-size: 36px;
+}
+
 .filter-select {
   background-color: rgb(155, 163, 172);
   border: 1px solid rgb(102, 107, 112);
@@ -18,6 +35,10 @@
   min-height: 36px;
   color: white;
   font-size: 16px;
+}
+
+.filter-select:focus{
+  outline: none;
 }
 
 .filter-button {

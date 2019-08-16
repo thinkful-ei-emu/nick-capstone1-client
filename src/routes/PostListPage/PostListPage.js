@@ -67,6 +67,7 @@ class PostListPage extends React.Component {
   }
 
   render() {
+    const {error} = this.context;
     let locations = Lists.makeOptions(Lists.locationOptions);
     let instruments = Lists.makeOptions(Lists.instrumentOptions)
     return (
@@ -89,6 +90,7 @@ class PostListPage extends React.Component {
         </div>
         <Link to={'/postform'}><button className='create-post-button'>Create Post</button></Link>
       </div>
+      {error && <div className='error'><p>Something Went Wrong</p></div>}
       <div className='post-list'>
       {this.renderPosts()}
       </div>
