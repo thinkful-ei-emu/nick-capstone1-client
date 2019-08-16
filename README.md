@@ -1,5 +1,5 @@
 BandBridge Client
 =================
 
-[Live App](https://band-bridge.ygnick.now.sh/ BandBridge)
+[Live App](https://band-bridge.ygnick.now.sh/)
 
