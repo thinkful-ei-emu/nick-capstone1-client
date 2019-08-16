@@ -27,3 +27,18 @@ Post Form Page
 Post Page
 
 ![Post page image](./screenshots/PostPage.png "Post page")
+
+Technologies used
+* React
+* react-dom
+* react-router-dom
+* jwt-decode
+
+To run development(local) server - npm start
+
+To deploy 
+1. npm run build 
+2. now ./build
+
+
+
