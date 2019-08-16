@@ -1,5 +1,5 @@
 .odd-item {
-  background-color:rgb(207, 55, 55);
+  background-color:rgb(107, 146, 190);
   color: white;
   margin: 2% 2%;
   padding: 2% 0;
@@ -7,11 +7,15 @@
 }
 
 .even-item {
-  background-color: rgb(155, 163, 172);
+  background-color: rgb(238, 131, 98);
   color: white;
   margin: 2% 2%;
   padding: 2% 0;
   border-radius: 5px;
+}
+
+.even-item > p {
+  padding: 0 25%;
 }
 
 .even-item > a {
@@ -27,6 +31,12 @@
 .even-item > a:hover {
   text-decoration: underline;
 }
+
+
+.odd-item > p {
+  padding: 0 25%;
+}
+
 
 .odd-item > a:hover {
   text-decoration: underline;
@@ -51,12 +61,6 @@
   border: none;
 }
 
-/*is this needed? */
-.post-item {
-  margin: 2% 2%; 
-  padding: 2% 0;
-  border-radius: 5px;
-}
 
 .item-header{
   margin: 0;
@@ -71,6 +75,10 @@
   margin-left: 25%;
 }
 
+.post-item-attr > li {
+  max-width: 60%;
+}
+
 @media only screen and (min-width: 700px){
   .post-item-attr {
     list-style: none;
@@ -82,7 +90,7 @@
 
 @media only screen and (min-width: 1000px){
   .odd-item {
-    background-color:rgb(207, 55, 55);
+    background-color:rgb(107, 146, 190);
     color: white;
     margin: 2% 25%;
     padding: 2% 0;
@@ -97,14 +105,15 @@
   .post-item-attr {
     list-style: none;
     text-align: left;
-    margin-left: 35%;
+    margin-left: 25%;
   }
+
 }
 
-@media only screen and (min-width: 1300px){
+/* @media only screen and (min-width: 1300px){
   .post-item-attr {
     list-style: none;
     text-align: left;
-    margin-left: 40%;
+    margin-left: 25%;
   }
-}
+} */

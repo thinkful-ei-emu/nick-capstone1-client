@@ -48,7 +48,7 @@ class LoginForm extends React.Component {
           <label htmlFor='login-password'>Password: </label>
           <input className='input' type='password' name='password' id='login-password' required/>
         </div>
-        <button type='submit' className='login-button'>Login</button>
+        <button type='submit' className='login-page-button'>Login</button>
       </form>
     )
   }

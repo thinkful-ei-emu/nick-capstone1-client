@@ -20,25 +20,6 @@ class PostListPage extends React.Component {
       .catch(this.context.setError)
   }
   
-  handleFilterLocation = ev => {
-    ev.preventDefault()
-    this.context.clearPostList()
-    const {location_filter} = ev.target
-    PostApiService.getPostsByLocation(location_filter.value)
-      .then(this.context.setPostList)
-      .then(() => location_filter.value = '')
-      .catch(this.context.setError)
-  }
-
-  handleFilterInstrument = ev => {
-    ev.preventDefault()
-    this.context.clearPostList()
-    const {instrument_filter} = ev.target
-    PostApiService.getPostsByInstrument(instrument_filter.value)
-      .then(this.context.setPostList)
-      .then(() => instrument_filter.value = '')
-      .catch(this.context.setError)
-  }
 
   handleClearFilter = ev => {
     ev.preventDefault();
@@ -84,10 +65,8 @@ class PostListPage extends React.Component {
            {instruments}
           </select>
           <button type='submit' className='filter-button'>Filter</button>
+        <button type='button' onClick={this.handleClearFilter} className='filter-button'>Clear</button>
         </form>
-        <div className='clear-control'>
-        <button type='button' onClick={this.handleClearFilter} className='clear-button'>Clear Filters</button>
-        </div>
         <Link to={'/postform'}><button className='create-post-button'>Create Post</button></Link>
       </div>
       {error && <div className='error'><p>Something Went Wrong</p></div>}

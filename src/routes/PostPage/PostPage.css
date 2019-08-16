@@ -1,6 +1,6 @@
 .post-info {
   color: white;
-  background-color: rgb(207, 55, 55);
+  background-color: rgb(238, 131, 98);
   margin: 1% 15%;
   border-radius: 5px;
 }
@@ -20,18 +20,19 @@
 }
 
 .comment-header { 
-  color: rgb(114, 121, 128);
-  font-size: 24px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
   margin: 0;
-  padding-top: 4%;
+  padding-top: 2%;
 }
 
 .comment:nth-child(even) {
-  background-color: rgb(114, 121, 128);
+  background-color: rgb(107, 146, 190);
 }
 
 .comment:nth-child(odd) {
-  background-color: rgb(207, 55, 55);
+  background-color: rgb(238, 131, 98);
 }
 .comment {
   color: white;
@@ -41,6 +42,28 @@
   border: 1px solid black;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px){
+  .post-item-attr {
+    margin-left: 10%;
+  }
+
+  .post-item-attr > li {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .post-item-attr {
+    margin-left: 32%;
+  }
+
+  .post-item-attr > li {
+    max-width: 80%;
+  }
+}
+
+
 
 
 

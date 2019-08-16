@@ -36,8 +36,8 @@ class PostListItem extends React.Component {
           <Link to={`/posts/${post.id}`}>
             <h2 className='item-header'>{post.style}</h2>
           </Link>
-          <p>Location: {post.location}</p>
-          <p>Need: {post.instruments_need.split(' ').join(', ')}</p>
+          <p><strong>Location: </strong>{post.location}</p>
+          <p><strong>Need: </strong>{post.instruments_need.split(' ').join(', ')}</p>
           <p>{this.truncDesc(post.description)}</p>
         <button onClick={this.toggleCollapse} className='toggle'>{buttonText}</button>
         </div>

@@ -12,8 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(102, 107, 112);
-  color: rgb(155, 163, 172);
+  background-color: rgb(107, 146, 190);
+  color: rgb(238, 131, 98);
   font-weight: bold;
   min-height: 300px;
   text-align: center;
@@ -26,7 +26,7 @@
 }
 
 .filter-select {
-  background-color: rgb(155, 163, 172);
+  background-color: rgb(238, 131, 98);
   border: 1px solid rgb(102, 107, 112);
   font-weight: bold;
   border-radius: 8px;
@@ -54,20 +54,6 @@
   margin-left: 20px;
 }
 
-.clear-control {
-  padding-top: 2%;
-}
-
-.clear-button {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  min-height: 36px;
-  width: auto;
-  background-color: rgb(207, 55, 55);
-  border: 1px solid rgb(136, 33, 33);
-  border-radius: 8px;
-}
 
 .create-post-button {
   color: white;
@@ -98,6 +84,35 @@
 
   .filter-form{
     padding: 1% 1%;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  
+  .post-list-filters {
+    width: 450px;
+    margin-left: 17%;
+  }
+  .filter-button {
+    height: 30px;
+    margin-top: 2%;
+  }
+  .filter-select {
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  .post-list-filters {
+    width: 450px;
+    margin-left: 6%;
+  }
+  .filter-button {
+    margin-top: 2%;
+    height: 30px;
+  }
+  .filter-select {
+    height: 30px;
   }
 }
 

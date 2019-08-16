@@ -44,11 +44,11 @@ class RegistrationForm extends React.Component {
       <form className='registraion-form' onSubmit={this.handleSubmit}>
         <div className='reg-form-row'>
           <label htmlFor='user_name'>Username: </label>
-          <input name='user_name' id='user_name' type='text' required />
+          <input name='user_name' id='user_name' type='text' placeholder='username...' required />
         </div>
         <div className='reg-form-row'>
           <label htmlFor='password'>Password: </label>
-          <input name='password' id='password' type='password' required />
+          <input name='password' id='password' type='password' placeholder='password...' required />
         </div>
         <div className='reg-form-row'>
           <label htmlFor='location'>Location: </label>

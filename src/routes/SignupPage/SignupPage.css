@@ -1,7 +1,7 @@
 .reg-form-container {
   font-style: oblique;
   color: white;
-  background-color: rgb(155, 163, 172);
+  background-color: rgb(107, 146, 190);
   text-align: center;
   margin: 2% 10%;
   padding: 4%;
@@ -21,16 +21,20 @@
 }
 
 .reg-form-row select {
-  background-color: rgb(207, 55, 55);
-  border: 1px solid rgb(207, 55, 55);
+  background-color: rgb(155, 163, 172);
+  border: 1px solid rgb(155, 163, 172);
   color: white;
 }
 
 .reg-form-row input {
-  background-color: rgb(207, 55, 55);
-  border: 1px solid rgb(207, 55, 55);
+  background-color: rgb(155, 163, 172);
+  border: 1px solid rgb(155, 163, 172);
   color: white;
   border-radius: 3px;
+}
+
+.reg-form-row input::placeholder {
+  color: white;
 }
 
 .reg-form-multi {
