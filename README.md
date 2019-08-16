@@ -1,7 +1,7 @@
 BandBridge Client
 =================
 
-##Summary
+> ## Summary
 
 BandBridge connects musicians based on location, style, skill and availability. Users are able to make posts specifying their musical needs or aspirations and can filter their feed of posts to find projects and bands that they might be interested in. Users can also make comments on posts to start a conversation and hopefully start a band.
 
